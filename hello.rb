@@ -4,6 +4,8 @@ require "./bye.rb"
 
 require "active_support/all"
 
-x = rand(30)
+pp "What's your name?"
+name = gets.chomp #add chomp to avoid the /n character that appears by default
 
-pp x.ordinalize
+message = "Good morning, " + name + "!"
+pp message
